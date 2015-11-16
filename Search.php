@@ -43,7 +43,7 @@
             <input type="Submit" value="Search" name="Search">
 			
 			<?php
-			include 'SearchDraft.php'
+			include 'SearchScript.php'
 			?>
 			
         </form>
