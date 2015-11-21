@@ -13,12 +13,13 @@
 								
 	while ($row=mysql_fetch_array($adminAppQuery)){
 		echo "<tr>";
+			//$CID=$row["Company_ID"];
 			echo "<td>" . $row["name"] . "</td>";
 			echo "<td>" . $row["Rep_First_Name"] . " " . $row["Rep_Last_Name"] . "</td>";
 			echo "<td>" . $row["Rep_Phone"] . "</td>";
 			echo "<td>" . $row["Rep_Email"] . "</td>";
 			echo "<td>" . $row["About"] . "</td>";
-			echo "<td><form class='submit'>
+			echo "<td><form method='post' class='submit'>
 			<input type='hidden' name='CID' value='" . $row["Company_ID"] . "'>
 			<input type='submit' value='Approve' name='Approve'>
 			<input type='submit' value='Delete' name='Delete'>
