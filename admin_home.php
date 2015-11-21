@@ -4,6 +4,7 @@
     header("Location:Login.php");
     }
 ?>-->
+<!--?php include "logout.php" ?>-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,27 +43,27 @@
     <nav>
         <ul>
             <li><a href="" title="Home" class="main">Home</a></li>
-            <li><a href="" title="Settings" class="main">Settings</a></li>
+            <li><a href="adminPasswordChange.php" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
 
     <div id="cover">
     
     <div id="infobar">
-        Welcome, Paul - Nieto
+        Welcome, Administrator
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
     <div id="feed">
           
         <table id="t01">
-            <caption><h2>Job Postings Needing Approval</h2></caption>
+            <caption><h2>Companies Needing Approval</h2></caption>
             <tr>
-                <th>Title</th>
-                <th>Position</th>		
-                <th>Type</th>
-                <th>City</th>
-                <th>Posted</th>
+                <th>Company</th>
+                <th>Contact</th>		
+                <th>Phone</th>
+                <th>Email</th>
+				<th>Company Info</th>
                 <th>Option</th> 
             </tr>
             
@@ -73,7 +74,7 @@
     </div>
     
     <!--<div id="profileInfo">
-		<?php include "compInfoScript.php" ?>
+		?php include "compInfoScript.php" ?>
 		
         Paul - Nieto
         <br>
