@@ -41,15 +41,17 @@
     
     <nav>
         <ul>
-            <li><a href="" title="Home" class="main">Home</a></li>
+            <li><a href="admin_home.php" title="Home" class="main">Home</a></li>
             <li><a href="" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
 
     <div id="cover">
+	
+	
     
     <div id="infobar">
-        Welcome, Paul - Nieto
+        Welcome, Administrator
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
@@ -58,12 +60,16 @@
 		<h2>Create New Company User</h2>
 		<h5>Enter the company's new username and password</h5>
         <table id="t01">
-			<form method="post" action="" id="new_company" class="user">
-				<span>Username:</span>
+			<form method="post">
+				<span>Username:</span><br>
 				<input type="text" name="username" id="username">
-				<br><span>Password:</span>
-				<input type="text" name="password" id="password">
-				<input type="Submit" value="submit" name="submit">
+				<br><span>Password:</span><br>
+				<input type="password" name="password" id="password">
+				<br><span>Re-enter Password:</span><br>
+				<input type="password" name="repassword" id="repassword">
+				<br>
+				<input type="Submit" value="Submit" name="submit">
+				<input type="Submit" value="Cancel" name="cancel">
             
             <?php include "adminApproveNewScript.php" ?>
 			</form>
@@ -73,7 +79,7 @@
     </div>
     
     <!--<div id="profileInfo">
-		<?php include "compInfoScript.php" ?>
+		?php include "compInfoScript.php" ?>
 		
         Paul - Nieto
         <br>
